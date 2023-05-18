@@ -1,6 +1,29 @@
 # mermaid-diagrams
 mermaidJS diagrams I think are interesting
 
+## State Machine Example
+
+```mermaid
+stateDiagram
+    state row1 {
+        D --> C1
+        state C1 {
+            X --> C
+        }
+        direction LR
+        [*] --> A
+        A --> B
+        B --> C
+        state B {
+          direction TB
+          a --> b
+        }
+    }
+```
+
+https://mermaid.js.org/syntax/stateDiagram.html has some documentation
+
+## Bootify ideas
 
 ```mermaid
 
